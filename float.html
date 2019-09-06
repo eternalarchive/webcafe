@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>float</title>
+    <style>
+    *{
+        margin: 0;
+    }
+    h1{
+        background-color: yellow;
+    }
+    h2{
+        background-color: pink;
+    }
+    h3{
+        background-color: lime;
+        /* clear: both; */
+    }
+    .box{
+        background-color: skyblue;
+        overflow: hidden;
+    }
+    .box [class^="box"]{
+        /* border: 1px solid red; */
+        float: left;
+    }
+    .box2{
+        position: relative;
+        top: 10px;
+    }
+    /*.box2{
+        background-color: hsla(30, 80%, 70%, 0.5);
+        float: left;
+        height: 50px;
+    }
+    .box3{
+        background-color: blue;
+        clear: both;
+        margin-top: 200px;
+    }*/
+    </style>
+</head>
+<body>
+    <h1>Heading1</h1>
+    <h2>Heading2</h2>
+    <div class="box">
+        <div class="box1">text text text1</div>
+        <div class="box2">float left right clear text text text</div>
+        <div class="box3">text text text2</div>
+        <div class="box4">text text text3</div>
+    </div>
+    <h3>Heading3</h3>
+</body>
+</html>
