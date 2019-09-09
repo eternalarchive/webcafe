@@ -47,6 +47,7 @@ body{
   position: absolute;
   top: 45px;
   left: 70px;
+  /* z-index: 10; */
 }
 /* 멤버링크 */
 .member{
@@ -78,6 +79,7 @@ body{
 }
 /* 매안 메뉴 */
 .menu{
+  /* position: relative; */
   background-color: #DD680F;
   background-image: linear-gradient(to bottom, #e5c62d 0%,#DD680F 35%,#DD680F 70%,#e5c62d 100%);
   padding-left: 225px;
@@ -97,13 +99,31 @@ body{
 }
 .menu-item{
   float: left;
-  line-height: 45px;
+  position: relative;
+  /* padding: 0 20px; */
+  /* padding: 10px 0; */
+}
+.menu-act .btn-menu{
+  color: #ff0 !important;
+  /* border-bottom: 2px solid #000; */
 }
 .btn-menu{
+  /* background-color: yellow; */
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 0px 20px;
   font-weight: 700;
   font-size: 1.6rem;
   color: #fff;
   text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0px -1px 0 #000, 0px 1px 0 #000;
+}
+.menu-act .btn-menu::after{
+  content: "";
+  /* background-color: blue; */
+  display: block;
+  border-top: 2px solid #000;
 }
 .sub-menu{
   padding-left: 0;
@@ -112,6 +132,26 @@ body{
   background-color: yellow;
   position: absolute;
   display: none;
+  /* width: 500px; */
+  white-space: nowrap;
+}
+.sub-menu li, .sub-menu1 a{
+  display: inline-block;
+}
+.sub-menu1 a{
+  padding: 10px 0;
+  margin-right: 10px;
+}
+.menu-act .sub-menu{
+  display: block;
+  /* left: 0; */
+  top: 47px;
+}
+.sub-menu1, .sub-menu2, .sub-menu3{
+  left: 0;
+}
+.sub-menu4, .sub-menu5, .sub-menu6{
+  right: 0;
 }
 .visual{
   background-color: lime;
