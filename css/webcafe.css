@@ -12,7 +12,7 @@ a{
   color: inherit;
 }
 /*숨김 콘텐츠*/
-.a11y-hidden, legend{
+.a11y-hidden, legend, .readable-hidden{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -343,6 +343,121 @@ fieldset{
   background-color: red;
   list-style-type: none;
 } */
+/* 유효성 검사 배너 */
+.validation-list{
+  /* background-color: yellow; */
+  list-style-type: none;
+  padding-left: 0;
+  margin: 25px 0 20px 0;
+}
+.validation-list li{
+  margin: 10px 0;
+}
+.validation-list a{
+  background: url('./images/validation_icon.png') no-repeat 20px 50%, linear-gradient(#ccc, #eee) repeat 0 0;
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding: 8px 0 8px 45px;
+}
+/* 여기는 내가해본 유효성 검사 */
+/* .validation-list{
+  margin: 20px 0;
+  list-style-type: none;
+  padding: 0;
+}
+.validation-list li{
+  margin: 10px 0;
+}
+.validation-list a{
+  display: block;
+  padding-left: 20px;
+  background-color: gray;
+  background-image: url('./images/validation_icon.png'), linear-gradient(to bottom, #c6c6c6 1%,#e5e5e5 100%);
+  background-repeat: no-repeat;
+  border: 1px solid silver;
+  border-radius: 15px;
+  line-height: 30px;
+}
+.validation-list a:hover{
+  color: red;
+} */
+
+/* 웹 관련 용어 - 내가 해본건 20190910 메모 맨 뒤에 있음*/
+.term{
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.term-heading{
+  /* background-color: yellow; */
+  margin: 0;
+  font-size: 1.5rem;
+}
+.term-list{
+  background-color: yellow;
+  margin: 10px 0 0 0;
+}
+.odd::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.odd .term-list-thumbnail, .odd .term-list-brief{
+  margin: 0;
+}
+.odd .term-list-subject, .odd .term-list-brief{
+  background-color: pink;
+  float: right;
+  width: 145px;
+}
+.odd .term-list-subject{
+  margin: -2px 0 5px 0;
+}
+.odd .term-list-thumbnail{
+  background-color: lime;
+  float: left;
+}
+.odd .term-list-thumbnail img{
+  vertical-align: top;
+}
+.odd .term-list-brief{
+  background-color: orange;
+  line-height: 1.5;
+}
+.odd{
+  margin: 0 0 15px 0;
+}
+/* even */
+.even::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.even .term-list-thumbnail, .even .term-list-brief{
+  margin: 0;
+}
+.even .term-list-subject, .even .term-list-brief{
+  background-color: pink;
+  float: left;
+  width: 145px;
+}
+.even .term-list-subject{
+  margin: -2px 0 5px 0;
+}
+.even .term-list-thumbnail{
+  background-color: lime;
+  float: right;
+}
+.even .term-list-thumbnail img{
+  vertical-align: top;
+}
+.even .term-list-brief{
+  background-color: orange;
+  line-height: 1.5;
+}
+
 .slogan{
   background-color: orange;
   padding: 15px 0;
