@@ -538,6 +538,137 @@ input[type="search"]{
   vertical-align: top;
 } */
 
+/* 공지사항/자료실 */
+.board{
+  background-color: yellow;
+  position: relative;
+}
+.board ul, .board .more{
+  display: none;
+}
+.tab-act ul, .tab-act .more{
+  display: block !important;
+}
+.notice-heading, .pds-heading{
+  margin: 0;
+  font-weight: 400;
+  font-size: 1em; /* 1.4상속 받은거 1배이므로 1.4rem하고 같다 */
+  background-color: skyblue;
+  position: absolute;
+  top: 0;
+}
+.notice-heading{
+  left: 0;
+}
+.pds-heading{
+  left: 74px;
+}
+.tab{
+  display: block;
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  color: #666;
+}
+.tab-act .tab{
+  color: #DD680F;
+  border-color: #DD680F #DD680F #fff #DD680F;
+  background: #fff;
+}
+.board ul{
+  background: pink;
+  margin: 20px 0;
+  padding: 45px 0 0 0; /*margin주면 겹친다는걸 배웠음*/
+  list-style: none;
+}
+.board li{
+  background: lime;
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.board li a{
+  background: silver;
+  width: 270px;
+  /* width: 100%; */
+  /* margin-left: auto; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.board time{
+  background: orange;
+  justify-content: flex-end;
+  margin-left: auto;
+  /* float: right; */
+}
+.board .more{
+  background-color: skyblue;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.more::before{
+  color: hsla(110, 70%, 20%, 1);
+}
+/* 내가 해보는 공지사항/자료실1 */
+/* .notice{
+  position: relative;
+}
+.board h2{
+  background: #ccc linear-gradient(#ccc, #eee);
+  margin: 0;
+  display: inline-block;
+}
+.pds-heading{
+  position: absolute;
+}
+.notice-more{
+  position: absolute;
+  padding-left: 300px;
+}
+.board .more{
+  background-color: skyblue;
+}
+.board ul{
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+} */
+/* .notice-heading, .pds-heading{
+  background: #ccc linear-gradient(#ccc, #eee);
+  margin: 0;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(56, 55, 55);
+  padding: 10px;
+  border: 1px solid silver;
+  border-radius: 3px 3px 0 0;
+  position: absolute;
+} */
+/* .notice-list, .pds-list{
+  background-color: pink;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+  display: block;
+  clear: both;
+} */
+/* .notice-list li{
+  display: flex;
+  flex-direction: row;
+}
+.notice-list a, .notice-list time{
+  background-color: lime;
+  justify-content: space-between;
+} */
+/* .notice-more, .pds-more{
+  background-color: skyblue;
+  position: absolute;
+} */
+
 .slogan{
   background-color: orange;
   padding: 15px 0;
