@@ -540,7 +540,7 @@ input[type="search"]{
 
 /* 공지사항/자료실 */
 .board{
-  /* background-color: yellow; */
+  background-color: yellow;
   position: relative;
 }
 .board ul, .board .more{
@@ -598,7 +598,7 @@ input[type="search"]{
   text-overflow: ellipsis;
 }
 .board time{
-  /* background: orange; */
+  background: orange;
   justify-content: flex-end;
   margin-left: auto;
   /* float: right; */
@@ -670,7 +670,7 @@ input[type="search"]{
 } */
 /* 내가 해보는 새소식 */
 .new{
-  /* background-color: red; */
+  /* background-color: yellow; */
   position: relative;
 }
 .new-heading{
@@ -679,11 +679,13 @@ input[type="search"]{
   padding: 15px 0 20px 0;
   width: 310px;
   font-size: 1.5rem;
+  color: #DD680F;
+  border-bottom: 1px solid #666;
 }
 .new-list{
   background-color: skyblue;
 }
-.div::after{
+.new::after{
   content: "";
   clear: both;
   display: block;
@@ -695,6 +697,8 @@ input[type="search"]{
   /* background-color: silver; */
   width: 250px;
   float: right;
+  font-weight: 700;
+  /* padding-bottom: 10px; */
 }
 .new-list-time{
   /* background-color: teal; */
@@ -702,6 +706,7 @@ input[type="search"]{
   width: 250px;
   /* display: inline-block; */
   /* clear: both; */
+  margin: 10px 0 20px 0;
 }
 .new-list-thumbnail{
   /* background-color: blue; */
@@ -709,6 +714,10 @@ input[type="search"]{
   width: 115px;
   text-align: center;
   /* display: inline-block; */
+}
+.new-list-thumbnail img{
+  box-shadow: 0 5px 10px 0 #666;
+  margin-bottom: 20px;
 }
 .new-list-brief{
   /* background-color: purple; */
