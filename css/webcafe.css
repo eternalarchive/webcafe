@@ -396,7 +396,7 @@ fieldset{
   font-size: 1.5rem;
 }
 .term-list{
-  background-color: yellow;
+  /* background-color: yellow; */
   margin: 10px 0 0 0;
 }
 .odd::after{
@@ -408,7 +408,7 @@ fieldset{
   margin: 0;
 }
 .odd .term-list-subject, .odd .term-list-brief{
-  background-color: pink;
+  /* background-color: pink; */
   float: right;
   width: 145px;
 }
@@ -416,14 +416,14 @@ fieldset{
   margin: -2px 0 5px 0;
 }
 .odd .term-list-thumbnail{
-  background-color: lime;
+  /* background-color: lime; */
   float: left;
 }
 .odd .term-list-thumbnail img{
   vertical-align: top;
 }
 .odd .term-list-brief{
-  background-color: orange;
+  /* background-color: orange; */
   line-height: 1.5;
 }
 .odd{
@@ -439,7 +439,7 @@ fieldset{
   margin: 0;
 }
 .even .term-list-subject, .even .term-list-brief{
-  background-color: pink;
+  /* background-color: pink; */
   float: left;
   width: 145px;
 }
@@ -447,14 +447,14 @@ fieldset{
   margin: -2px 0 5px 0;
 }
 .even .term-list-thumbnail{
-  background-color: lime;
+  /* background-color: lime; */
   float: right;
 }
 .even .term-list-thumbnail img{
   vertical-align: top;
 }
 .even .term-list-brief{
-  background-color: orange;
+  /* background-color: orange; */
   line-height: 1.5;
 }
 
@@ -540,7 +540,7 @@ input[type="search"]{
 
 /* 공지사항/자료실 */
 .board{
-  background-color: yellow;
+  /* background-color: yellow; */
   position: relative;
 }
 .board ul, .board .more{
@@ -598,7 +598,7 @@ input[type="search"]{
   text-overflow: ellipsis;
 }
 .board time{
-  background: orange;
+  /* background: orange; */
   justify-content: flex-end;
   margin-left: auto;
   /* float: right; */
@@ -668,6 +668,60 @@ input[type="search"]{
   background-color: skyblue;
   position: absolute;
 } */
+/* 내가 해보는 새소식 */
+.new{
+  /* background-color: red; */
+  position: relative;
+}
+.new-heading{
+  /* background-color: lime; */
+  margin: 0;
+  padding: 15px 0 20px 0;
+  width: 310px;
+  font-size: 1.5rem;
+}
+.new-list{
+  background-color: skyblue;
+}
+.div::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.new dd{
+  margin-left: 0;
+}
+.new-list-subject{
+  /* background-color: silver; */
+  width: 250px;
+  float: right;
+}
+.new-list-time{
+  /* background-color: teal; */
+  float: right;
+  width: 250px;
+  /* display: inline-block; */
+  /* clear: both; */
+}
+.new-list-thumbnail{
+  /* background-color: blue; */
+  float: left;
+  width: 115px;
+  text-align: center;
+  /* display: inline-block; */
+}
+.new-list-brief{
+  /* background-color: purple; */
+  float: right;
+  width: 250px;
+}
+.new-more{
+  /* background-color: orange; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 13px
+}
 
 .slogan{
   background-color: orange;

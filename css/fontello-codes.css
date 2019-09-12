@@ -3,9 +3,10 @@
 .icon-ok:before { content: '\e801'; } /* '' */
 .icon-search:before { content: '\e802'; } /* '' */
 .icon-plus-circled:before { content: '\e803'; } /* '' */
-.icon-right-open:before { content: '\e804'; } /* '' */
+.icon-plus:before { content: '\e804'; } /* '' */
 .icon-angle-right:before { content: '\f105'; } /* '' */
 .icon-quote-left:before { content: '\f10d'; } /* '' */
 .icon-quote-right:before { content: '\f10e'; } /* '' */
 .icon-ellipsis-vert:before { content: '\f142'; } /* '' */
 .icon-dot-circled:before { content: '\f192'; } /* '' */
+.icon-right-open:before { content: '\fdfe'; } /* '﷾' */
