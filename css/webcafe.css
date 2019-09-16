@@ -544,7 +544,7 @@ input[type="search"]{
 
 /* 공지사항/자료실 */
 .board{
-  background-color: yellow;
+  /* background-color: yellow; */
   position: relative;
 }
 .board ul, .board .more{
@@ -557,7 +557,7 @@ input[type="search"]{
   margin: 0;
   font-weight: 400;
   font-size: 1em; /* 1.4상속 받은거 1배이므로 1.4rem하고 같다 */
-  background-color: skyblue;
+  /* background-color: skyblue; */
   position: absolute;
   top: 0;
 }
@@ -581,19 +581,19 @@ input[type="search"]{
   background: #fff;
 }
 .board ul{
-  background: pink;
+  /* background: pink; */
   margin: 20px 0;
   padding: 45px 0 0 0; /*margin주면 겹친다는걸 배웠음*/
   list-style: none;
 }
 .board li{
-  background: lime;
+  /* background: lime; */
   margin: 8px 0;
   display: flex;
   justify-content: space-between;
 }
 .board li a{
-  background: silver;
+  /* background: silver; */
   width: 270px;
   /* width: 100%; */
   /* margin-left: auto; */
@@ -602,13 +602,13 @@ input[type="search"]{
   text-overflow: ellipsis;
 }
 .board time{
-  background: orange;
+  /* background: orange; */
   justify-content: flex-end;
   margin-left: auto;
   /* float: right; */
 }
 .board .more{
-  background-color: skyblue;
+  /* background-color: skyblue; */
   position: absolute;
   top: 0;
   right: 0;
@@ -674,7 +674,6 @@ input[type="search"]{
 } */
 /* 내가 해보는 새소식 */
 .new{
-  /* background-color: yellow; */
   position: relative;
 }
 .new::after{
@@ -683,7 +682,6 @@ input[type="search"]{
   display: block;
 }
 .new-heading{
-  /* background-color: lime; */
   margin: 0;
   padding: 15px 0 15px 0;
   width: 310px;
@@ -711,7 +709,6 @@ input[type="search"]{
   /* padding-bottom: 10px; */
 }
 .new-list-time{
-  /* background-color: teal; */
   float: right;
   width: 250px;
   /* display: inline-block; */
@@ -719,7 +716,6 @@ input[type="search"]{
   padding: 5px 0 10px 0;
 }
 .new-list-thumbnail{
-  /* background-color: blue; */
   position: absolute;
   padding-top: 23px;
   width: 115px;
@@ -732,14 +728,12 @@ input[type="search"]{
   margin-bottom: 20px;
 }
 .new-list-brief{
-  /* background-color: purple; */
   margin: 0;
   float: right;
   width: 250px;
   line-height: 1.5;
 }
 .new-more{
-  /* background-color: orange; */
   position: absolute;
   top: 0;
   right: 0;
@@ -747,6 +741,67 @@ input[type="search"]{
 }
 .new-more::before{
   color: hsla(110, 70%, 20%, 1);
+}
+/* 새소식 */
+.news{
+  /* background: yellow; */
+  margin-top: 20px;
+  position: relative;
+  padding-top: 15px;
+}
+.news-heading{
+  /* background: orange; */
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 320px;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(45deg, #666, #eee) 1;
+  color: #DD680F;
+}
+.news-article{
+  padding-top: 20px;
+}
+.news-article-subject{
+  /* background: skyblue; */
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  float: right;
+  width: 250px;
+  padding-bottom: 5px;
+}
+.news-article-date{
+  /* background: purple; */
+  float: right;
+  width: 250px;
+}
+.news-article-brief{
+  /* background: lime; */
+  margin: 0;
+  float: right;
+  width: 250px;
+  padding-top: 10px;
+  line-height: 1.5;
+}
+.news-article-thumbnail{
+  /* background: silver; */
+  margin: 0;
+  text-align: center;
+  position: absolute;
+}
+.news-article-thumbnail img{
+  box-shadow: 0 10px 10px #666;
+  margin-bottom: 20px;
+}
+.news-more{
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+.news-more::before{
+  color: hsla(110, 70%, 20%, 1)
 }
 
 .slogan{
