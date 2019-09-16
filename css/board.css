@@ -1,0 +1,159 @@
+@charset "utf-8";
+@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+@import url('./fontello.css');
+
+
+/* 초기화 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+/* 숨김 콘텐츠 */
+.a11y-hidden, legend{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-size: 1.4rem;
+  margin: 50px;
+  color: #181818;
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
+  font-weight: 400;
+  background: #fff;
+}
+/* 탭 UI */
+.board{
+  /* background: yellow; */
+  position: relative;
+}
+.tab-list, .board-list{
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.tab-list{
+  /* background: pink; */
+  /* display: flex; */
+}
+.tab-list::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.tab-list li{
+  /* background: lime; */
+  /* display: inline-block; */
+  float: left;
+}
+[role="tab"]{
+  background: #ccc linear-gradient(#ccc, #eee);
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  color: #666;
+  border-radius: 5px 5px 0 0;
+}
+[role="tab"][aria-selected="true"]{
+  background: #fff;
+  border-color: hsla(25, 70%, 60%, 1) hsla(25, 70%, 60%, 1) #fff hsla(25, 70%, 60%, 1);
+  color: hsla(25, 70%, 60%, 1);
+}
+.tab-content{
+  /* background: skyblue; */
+  /* clear: both; */
+}
+.notice, .pds{
+  display: none;
+}
+.tab-content-act{
+  display: block !important;
+}
+.board-list{
+  margin-top: 20px;
+}
+.board-list li{
+  /* background: pink; */
+  display: flex;
+  margin: 5px;
+}
+.board-list time{
+  margin-left: auto;
+}
+.board-list a{
+  /* background: lime; */
+  width: 285px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.more{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 5px;
+}
+.more::before{
+  color: rgb(42, 92, 32);
+}
+/* 내가 짠 탭 UI */
+/* .board {
+  background-color: yellow;
+  position: relative;
+  width: 350px;
+}
+.notice, .pds{
+  display: none;
+}
+.tab-content-act{
+  display: block !important;
+}
+#tab1, #tab2{
+  background-color: #ccc;
+  border: 1px solid #666;
+  border-radius: 5px;
+  border-bottom: 0;
+  position: absolute;
+  top: 0;
+  height: 45px;
+  padding: 10px;
+}
+#tab2{
+  left: 110px;
+}
+.board-list{
+  background-color: silver;
+  padding: 0;
+  margin: 0;
+}
+.board-list li{
+  background-color: lime;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.board-list a{
+  background-color: orange;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+section .more{
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */

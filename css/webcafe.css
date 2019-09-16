@@ -195,7 +195,7 @@ body{
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
   animation-play-state: paused; */
-  animation: bgAni 2000ms 1000ms infinite alternate ease-in-out;
+  animation: bgAni 2000ms infinite alternate ease-in-out;
 }
 .visual::before{
   /* background-color: silver;
@@ -394,6 +394,7 @@ fieldset{
   /* background-color: yellow; */
   margin: 0;
   font-size: 1.5rem;
+  padding: 5px 0; /*내가 추가한 거*/
 }
 .term-list{
   /* background-color: yellow; */
