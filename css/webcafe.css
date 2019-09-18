@@ -21,6 +21,12 @@ a{
   clip: rect(0,0,0,0);
   white-space: nowrap;
 }
+/* clearfix - float 이슈 해결하기 위한 선언 */
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
 html{
   font-size: 10px;
 }
@@ -1044,6 +1050,164 @@ input[type="search"]{
   padding-left: 0;
   margin-bottom: 10px;
   border: 1px solid #aaa;
+} */
+
+/* 인기 사이트 */
+.favorite{
+  margin-top: 20px;
+  padding: 0 10px;
+  position: relative;
+}
+.favorite-heading{
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+.favorite-list{
+  padding-left: 0;
+  list-style-type: none;
+  counter-reset: 0;
+}
+.favorite-list li{
+  /* background: yellow; */
+  counter-increment: number;
+  margin: 8px 0;
+  position: relative;
+  /* display: flex;
+  align-items: center; */
+}
+.favorite-list li::before{
+  content: counter(number);
+  color: #fff;
+  font-size: 1.2rem;
+  background: #999;
+  border-radius: 3px;
+  padding: 2px 5px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.favorite-list a{
+  /* background: skyblue; */
+  display: inline-block;
+  vertical-align: middle;
+}
+.favorite-list em{
+  background: url('./images/rank.png') no-repeat;
+  /* margin-left: auto; */
+  font-style: normal;
+  width: 9px;
+  height: 11px;
+  text-indent: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: -5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+em.stop{
+  background-position: 0 50%;
+}
+em.down{
+  background-position: 0 100%;
+}
+.favorite-more{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.favorite-more::before{
+  color: hsla(110, 70%, 20%, 1);
+}
+/* .no1::before{
+  content: "1";
+}
+.no2::before{
+  content: "2";
+}
+.no3::before{
+  content: "3";
+}
+.no4::before{
+  content: "4";
+} */
+.favorite-heading span{
+  color: #DD680F;
+}
+/* 내가 짠 인기 사이트 */
+/* .favorite{
+  position: relative;
+  padding: 15px 10px;
+  margin-top: 20px;
+}
+.favorite-heading{
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+.favorite-heading span{
+  color: #DD680F;
+}
+.favorite-list{
+  padding-left: 0;
+  margin: 0;
+  line-height: 1.5;
+  list-style-type: none;
+}
+.favorite-list em{
+  margin-left: auto;
+}
+.no1, .no2, .no3, .no4{
+  display: flex;
+  justify-content: space-between;
+}
+.no1::before, .no2::before, .no3::before, .no4::before{
+  content: "";
+  color: white;
+  background: #aaa;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+.no1::before{
+  content: "1";
+}
+.no2::before{
+  content: "2";
+}
+.no3::before{
+  content: "3";
+}
+.no4::before{
+  content: "4";
+}
+.favorite-list .up, .favorite-list .down, .favorite-list .stop{
+  font-style: normal;
+  background-image: url('./images/rank.png');
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 20px;
+  text-indent: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.favorite-list .up{
+  background-position: 0 5px;
+}
+.favorite-list .down{
+  background-position: 0 100%;
+}
+.favorite-list .stop{
+  background-position: 0 45%;
+}
+.favorite-more{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.icon-plus::before{
+  color: hsla(110, 70%, 20%, 1);
+  margin-top: 5px;
 } */
 
 .slogan{
