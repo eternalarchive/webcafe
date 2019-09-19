@@ -1298,12 +1298,93 @@ em.down{
   padding: 0;
 } */
 
-
-.footer-bg{
+/* 내가 짠 푸터 */
+/* .footer-bg{
   background: linear-gradient(to bottom, #eee, #fff) repeat 0 0 scroll, yellow;
-  background: ;
   padding: 15px 0;
 }
 .footer{
-  background-color: yellow;
+  position: relative;
+  padding-right: 100px;
+}
+.footer-logo{
+  margin: 0 15px 0 35px;
+  position: absolute;
+  top: 25px;
+}
+.guide-list{
+  background: #666;
+  margin: 0;
+  margin-left: 150px;
+  padding: 15px 40px;
+  width: 690px;
+  list-style-type: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 1.4rem;
+  position: relative;
+  right: 0;
+  top: 0;
+  text-transform: uppercase;
+}
+.guide-list a{
+  padding: 15px 0;
+}
+.address{
+  font-style: normal;
+  margin: 15px 0 5px 150px;
+}
+.copyright{
+  font-size: inherit;
+  margin-left: 150px;
+}
+.badge{
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+/* 푸터 */
+.footer-bg{
+  background: linear-gradient(to bottom, #eee, #fff) repeat 0 0 scroll, #ccc;
+  padding: 15px 0;
+}
+.footer{
+  position: relative;
+  padding: 0 100px 0 150px;
+}
+/* 푸터 로고 */
+.footer-logo{
+  position: absolute;
+  top: 10px; /*탑 좌표에 패딩 15px가 있으니*/
+  left: 35px;
+}
+/* 가이드 링크 모음 */
+.guide-list{
+  background: #7b8385;
+  color: #fff;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+.guide-list a{
+  display: block;
+  padding: 8px 10px;
+  text-transform: uppercase;
+}
+/* 연락처 정보 */
+.address{
+  font-style: normal;
+  margin: 10px 0 5px;
+}
+/* 기술 로고 */
+.badge{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
