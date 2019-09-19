@@ -36,17 +36,19 @@ body{
   color: #181818;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 400;
-  background: gray;
+  background: url('./images/bg_flower.png') no-repeat 50% 0 fixed, linear-gradient(to bottom, #eee, #fff) repeat 0 0 scroll, yellow;
+  /* background-size: 940px 382px, 100% 100px; */
 }
 .header, .visual, .main-content, .slogan, .footer{
   margin: 0 auto;
   width: 940px;
 }
 .header{
+  background-color: #fff;
   box-sizing: border-box;
-  background-color: pink;
   position: relative;
   padding: 0px 30px 50px 30px;
+  border-radius: 0 0 15px 15px;
 }
 /* 로고 */
 .logo{
@@ -100,7 +102,6 @@ body{
 }
 .menu::after{
   content: "";
-  background-color: lime;
   clear: both;
   display: block;
 }
@@ -136,7 +137,6 @@ body{
   padding-left: 0;
   list-style: none;
   margin: 0;
-  background-color: yellow;
   position: absolute;
   display: none;
   /* width: 500px; */
@@ -186,9 +186,9 @@ body{
   100%{ opacity: 0; }
 }
 .visual{
-  background-color: lime;
   height: 120px;
   position: relative;
+  /* background: url('./images/bg_flower.png') no-repeat 0 50%; */
 }
 .visual::before, .visual::after{ 
   content: "";
@@ -217,7 +217,6 @@ body{
 }
 .visual-text{
   position: absolute;
-  background-color: yellow;
   animation-name: textAni;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -230,6 +229,7 @@ body{
   flex-direction: row;
   justify-content: space-between;
   padding: 30px;
+  border-radius: 15px 15px 0 0 ;
 }
 
 /* .group{
@@ -1210,12 +1210,98 @@ em.down{
   margin-top: 5px;
 } */
 
+/* 슬로건 */
 .slogan{
-  background-color: orange;
-  padding: 15px 0;
+  padding: 0px 100px 15px 30px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
 }
+.slogan-heading{
+  margin: 0;
+  min-width: 110px;
+  height: 83px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  /* text-align: center;
+  line-height: 83px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* position: absolute;
+  bottom: -25px;
+  left: 30px; */
+  /* float: left; */
+  margin-bottom: -25px;
+  margin-right: 25px;
+  flex: 0 2 auto;
+  bottom: -20px;
+}
+.slogan-heading::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./images/coffee.png') no-repeat;
+}
+.slogan-content{
+  color: #a09784;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  margin: 0;
+  /* float: right;
+  width: 615px; */
+  flex: 0 1 auto;
+}
+.slogan-content q::after{
+  /* quotes: "[[" "]]"; */
+  content: "";
+}
+.slogan-content q::before{
+  font-size: 3rem;
+  position: relative;
+  top: 10px;
+}
+
+/* 내가 짠 슬로건 */
+/* .slogan-heading{
+  background:  url('./images/coffee.png') no-repeat;
+  width: 120px;
+  height: 85px;
+  text-indent: 125px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+.slogan-content{
+  color: #a09784;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  position: relative;
+  width: 720px;
+  height: 60px;
+  padding-left: 10px;
+}
+.slogan-content q::after{
+  content: "";
+}
+.slogan-content q::before{
+  font-size: 3.5rem;
+  padding: 0;
+} */
+
+
 .footer-bg{
-  background-color: silver;
+  background: linear-gradient(to bottom, #eee, #fff) repeat 0 0 scroll, yellow;
+  background: ;
   padding: 15px 0;
 }
 .footer{
